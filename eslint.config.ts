@@ -11,7 +11,7 @@ export default defineConfig([
     extends: ["js/recommended"],
     languageOptions: { globals: globals.browser },
   },
-  globalIgnores(["dist/**", "node_modules/**"]),
+  globalIgnores(["dist/**", "node_modules/**", "coverage/**"]),
   tseslint.configs.recommended,
   pluginSecurity.configs.recommended,
 ]);
