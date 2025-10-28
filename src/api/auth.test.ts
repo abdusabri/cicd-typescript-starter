@@ -16,7 +16,7 @@ describe("getAPIKey", () => {
 
   it("returns the api key when header is valid", () => {
     expect(getAPIKey({ authorization: "ApiKey my-secret" } as any)).toEqual(
-      "my-secret"
+      "my-secret",
     );
   });
 
